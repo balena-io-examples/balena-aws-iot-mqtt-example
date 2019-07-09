@@ -60,6 +60,9 @@ mqtt_client.connect()
 # Subscribe to the desired topic and register a callback.
 mqtt_client.subscribe("balena/payload_test", 1, payload_report)
 
-
+i=0
 while True:
+    i=i+1
+    print('Publishing to "balena/payload_write_test" the value: ', i)
+    mqtt_client.publish("balena/payload_write_test", i, 0)
     sleep(5)
