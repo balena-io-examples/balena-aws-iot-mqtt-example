@@ -39,7 +39,6 @@ mqtt_client = AWSIoTMQTTClient(device_uuid)
 mqtt_client.configureEndpoint(aws_endpoint, aws_port)
 
 # Used to configure the rootCA, private key and certificate files. configureCredentials(CAFilePath, KeyPath='', CertificatePath='')
-# mqtt_client.configureCredentials("{}root-CA.crt".format(certRootPath), "{}thing.private.key".format(certRootPath), "{}thing.public.key".format(certRootPath))
 mqtt_client.configureCredentials(certRootPath+"root-CA.crt", certRootPath+"thing.private.key", certRootPath+"thing.cert.pem")
 
 # Configure the offline queue for publish requests to be 20 in size and drop the oldest
