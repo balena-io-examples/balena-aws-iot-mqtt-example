@@ -1,3 +1,5 @@
+**For balena's current cloud integration tools, see the [Provision with cloud IoT](https://www.balena.io/docs/learn/develop/cloud-iot-provisioning/aws/) docs, [aws-iot-provision](https://github.com/balena-io-examples/aws-iot-provision) repo, and [cloud-relay](https://github.com/balena-io-examples/cloud-relay) repo.**
+
 ## Balena AWS IoT Example Project
 
 This is a sample project on how to connect a balena device to a AWS IoT MQTT Broker. 
